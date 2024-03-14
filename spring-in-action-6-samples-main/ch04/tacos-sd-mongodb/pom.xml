@@ -92,7 +92,7 @@
     <!-- end::springDataMongoDb[] -->
     <!-- tag::flapDoodle[] -->
     <dependency>
-      <groupId>de.flapdoodle.embed</groupId>
+      <groupId>de.flapdoodle.embed</groupId> <!--Won't need a seperate database-->
       <artifactId>de.flapdoodle.embed.mongo</artifactId>
       <!-- <scope>test</scope> -->
     </dependency>
