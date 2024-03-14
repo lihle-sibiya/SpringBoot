@@ -14,7 +14,7 @@ import tacos.data.TacoRepository;
 import tacos.data.UserRepository;
 
 @Profile("!prod")
-@Configuration
+@Configuration //Annotations
 public class DevelopmentConfig {
 
   @Bean
