@@ -23,8 +23,8 @@ import tacos.data.UserRepository;
 public class SecurityConfig {
   
   @Bean
-  public PasswordEncoder passwordEncoder() {
-    return new BCryptPasswordEncoder();
+  public PasswordEncoder passwordEncoder() {//used in creating and authenticating users
+    return new BCryptPasswordEncoder();//Applies bcrypt strong hashing encryption
   }
   
   @Bean
