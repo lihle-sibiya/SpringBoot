@@ -17,10 +17,10 @@ import org.springframework.web.bind.annotation.RestController;
 import tacos.Taco;
 import tacos.data.TacoRepository;
 
-@RestController
+@RestController //REST controller
 @RequestMapping(path="/api/tacos",                      // <1>
-                produces="application/json")
-@CrossOrigin(origins="http://tacocloud:8080")        // <2>
+                produces="application/json")//JSON based API
+@CrossOrigin(origins="http://tacocloud:8080")        // <2> Apply CORS
 public class TacoController {
   private TacoRepository tacoRepo;
 
